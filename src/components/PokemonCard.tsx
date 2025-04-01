@@ -24,10 +24,16 @@ function PokemonCard() {
   else {
     return <p>{"???"}</p>; 
 }*/
-  return pokemon.imgSrc ? (
-    <img src={pokemon.imgSrc} alt={pokemon.name} />
-  ) : (
-    <p>???</p>
+
+  return (
+    <figure>
+      {pokemon.imgSrc ? (
+        <img src={pokemon.imgSrc} alt={pokemon.name} />
+      ) : (
+        <p>???</p>
+      )}
+      <figcaption>Bulbazaur</figcaption>
+    </figure>
   );
 }
 
