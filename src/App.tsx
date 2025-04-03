@@ -44,6 +44,9 @@ function App() {
           {pokemonList.map((Pokemon) => (
             <li key={Pokemon.name}>
               {Pokemon.imgSrc} {Pokemon.name}
+              <button type="button" onClick={() => setPokemonName("bulbasaur")}>
+                {pokemon.name}
+              </button>
             </li>
           ))}
         </ul>
