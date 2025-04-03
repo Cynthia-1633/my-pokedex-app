@@ -40,16 +40,17 @@ function App() {
   return (
     <div>
       <nav>
-        <ul>
-          {pokemonList.map((Pokemon) => (
-            <li key={Pokemon.name}>
-              {Pokemon.imgSrc} {Pokemon.name}
-              <button type="button" onClick={() => setPokemonName("bulbasaur")}>
-                {pokemon.name}
-              </button>
-            </li>
+        <div className="listButton">
+          {pokemonList.map((pokemon) => (
+            <button
+              key={pokemon.name}
+              type="button"
+              onClick={() => setPokemonName(pokemon.name)}
+            >
+              {pokemon.name}
+            </button>
           ))}
-        </ul>
+        </div>
       </nav>
       <PokemonCard pokemon={pokemon} />
     </div>
