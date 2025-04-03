@@ -54,3 +54,12 @@ function App() {
 }
 
 export default App;
+
+/* supression des boutons 
+      <button type="button" onClick={() => setPokemonName("bulbasaur")}>
+        bulbasaur
+      </button>
+      <button type="button" onClick={() => setPokemonName("mew")}>
+        mew
+      </button>
+*/
