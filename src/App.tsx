@@ -38,9 +38,9 @@ function App() {
     throw new Error("Invalid pokemon name");
   }
   return (
-    <div>
+    <div className="div-container">
       <nav>
-        <div className="listButton">
+        <div className="list-button">
           {pokemonList.map((pokemon) => (
             <button
               key={pokemon.name}
