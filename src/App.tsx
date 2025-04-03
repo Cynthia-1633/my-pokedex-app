@@ -41,11 +41,11 @@ function App() {
     <div>
       <nav>
         <ul>
-        {pokemonList.map((Pokemon) => (
-          <li key={Pokemon.name}>
-            {<Pokemon.imgSrc} {Pokemon.name}
-          </li>
-        ))}
+          {pokemonList.map((Pokemon) => (
+            <li key={Pokemon.name}>
+              {Pokemon.imgSrc} {Pokemon.name}
+            </li>
+          ))}
         </ul>
       </nav>
       <PokemonCard pokemon={pokemon} />
